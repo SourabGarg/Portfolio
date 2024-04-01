@@ -424,6 +424,17 @@ body {
   color: var(--orange-soda);
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container a {
+  margin: 10px 0px 0px 0px;
+  align-self: center;
+  justify-content: center;
+}
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -780,6 +791,12 @@ textarea.contact-input {
 
   .portfolio-list li:nth-child(even) .card-content {
     margin-inline-start: 50%;
+  }
+  .button-container {
+    flex-direction: row;
+  }
+  .button-container a {
+    margin-left: 10px;
   }
 }
 
