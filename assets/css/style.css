@@ -783,6 +783,27 @@ textarea.contact-input {
 /**
  * responsive for larger than 600px screen
  */
+ @media (max-width: 600px) {
+  #portfolio-card-1{
+     background-image: url("../images/portfolio-1s.png") !important;
+  }
+  #portfolio-card-2{
+    background-image: url("../images/portfolio-2s.png") !important;
+ }
+ #portfolio-card-3{
+  background-image: url("../images/portfolio-3s.png") !important;
+}
+#portfolio-card-4{
+  background-image: url("../images/portfolio-4s.png") !important;
+}
+#portfolio-card-5{
+  background-image: url("../images/portfolio-5s.png") !important;
+}
+#portfolio-card-last{
+  background-image: url("../images/portfolio-lasts.png") !important;
+}
+}
+
 
 @media (min-width: 600px) {
   /**
