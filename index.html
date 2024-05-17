@@ -509,7 +509,7 @@
                     required
                     class="contact-input"
                   ></textarea>
-                  <span id="message" style="color: #5Cb85c; margin: 10px 0px;"></span>
+                  <span id="message" style="color: gray; margin: 10px 0px;"></span>
                   <button type="submit" class="btn-submit">
                     Submit Message
                   </button>
@@ -620,9 +620,11 @@
       const form = document.forms['submit-to-google-sheet']
       const message = document.getElementById("message")
       form.addEventListener('submit', e => {
+        message.innerHTML = "Sending message..."
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
+            message.style.color = "green";
             message.innerHTML = "Message sent sucessfully"
             setTimeout(function(){
               message.innerHTML = ""
