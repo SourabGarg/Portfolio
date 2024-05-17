@@ -624,7 +624,7 @@
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            message.style.color = "green";
+            message.style.color = "#5Cb85c";
             message.innerHTML = "Message sent sucessfully"
             setTimeout(function(){
               message.innerHTML = ""
