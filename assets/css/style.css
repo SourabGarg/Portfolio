@@ -1158,3 +1158,10 @@ textarea.contact-input {
     margin-inline: 0;
   }
 }
+.copyright span {
+    display: inline-block;
+}
+
+.copyright a {
+    display: inline-block;
+}
